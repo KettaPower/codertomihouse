@@ -1,0 +1,95 @@
+.tarjetas{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+    .tarjeta{
+        background-color: $secundario;
+        display: flex;
+        width: 46%;
+        height: 200px;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 3px solid $primario;
+            border-radius: 50%;
+            display: block;
+            margin: 4rem;
+        }
+        .contenido-texto-card{
+            font-family: $font2;
+            font-size: $text-xs;
+            margin: 3rem;
+            color: bisque;
+            h4{
+                color: $primario;
+                font-size: $text-m;
+               
+            }
+        }
+     }
+    
+}
+.tarjeta{
+    background-color: $secundario;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+ }
+.tarjetas .tarjeta img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid $primario;
+    border-radius: 50%;
+    display: block;
+    margin: 4rem;
+}
+.tarjetas .tarjeta .contenido-texto-card{
+    font-family: $font2;
+    font-size: $text-xs;
+    margin: 3rem;
+    color: bisque;
+}
+.tarjetas .tarjeta .contenido-texto-card h4{
+    color: $primario;
+    font-size: $text-m;
+   
+}
+
+.loginn{
+    margin: 15rem;
+    margin-left: 50rem;
+    margin-right: 50rem;
+    font-size: 2em;
+    
+    .btn{
+        font-size: 1em;
+        a{
+            color: antiquewhite;
+        }
+    }
+
+
+
+    }
+
+
+    .buysafe{
+        h1{
+            color: $primario;
+            font-size: 4em;
+            text-align: center;
+            margin-top: 5rem;
+        }
+        h2{
+            font-size: 2em;
+            color: $secundario;
+        }
+    }

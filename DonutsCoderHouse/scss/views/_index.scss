@@ -1,0 +1,321 @@
+
+/*DONUT*/
+.nombre-inicial{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: $secundario;
+
+}
+.nombre-inicial .nombre{
+ 
+    height: 60rem;
+    width: 60rem;
+   
+}
+
+
+/*SOBRE NOSOTROS*/
+
+.div-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.imagen-shop-donut{
+    width: 45%;
+}
+.div-sobre-nosotros .contenedor-donutshop{
+    width: 45%;
+    font-family: $font3;
+    font-size: $text-s;
+    margin-top: $espacio-lg; 
+}
+
+.contenedor-donutshop h3{
+    margin-bottom: 1.5rem;
+    margin-top: $espacio-md;
+    
+    
+}
+.contenedor-donutshop h3 span{
+    background: $primario;
+    color: floralwhite;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+    margin-right: 1rem;
+}
+.contenedor-donutshop p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    font-family: $font2;
+    font-size: $text-s;
+    color: bisque;
+}
+
+
+
+/*productos*/
+
+
+.galeria-donas{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.imagen-dona{
+    width: 25%;
+    margin-bottom: 10px;
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+    
+   
+}
+.imagen-dona  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    padding: 1rem;
+}
+h2{
+    color: $primario;
+    font-size: $text-xxl;
+    padding-top: 10rem;
+    text-align: center;    
+}
+
+.hover-don{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;   
+    transform: scale(0);
+    background: #00000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imagen-donas:hover .hover-dona{
+    transform: scale(1);
+    transition: 0.75s;
+}
+
+
+/*CLIENTES*/
+
+.tarjetas{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+    .tarjeta{
+        background-color: $secundario;
+        display: flex;
+        width: 46%;
+        height: 200px;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 3px solid $primario;
+            border-radius: 50%;
+            display: block;
+            margin: 4rem;
+        }
+        .contenido-texto-card{
+            font-family: $font2;
+            font-size: $text-xs;
+            margin: 3rem;
+            color: bisque;
+            h4{
+                color: $primario;
+                font-size: $text-m;
+               
+            }
+        }
+     }
+    
+}
+
+
+
+
+/*CARD*/
+#cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--espacio-sm);
+}
+.card{
+   flex: 1 1 250px;
+   margin-top: 5rem;
+   border: solid var(--primario);
+   div{
+    padding: var(--espacio-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-xs);
+    padding: 1rem;Enviar
+.card-description{
+    font-family: var(--font2);
+    font-size: var(--text-xs);
+    color: var(--secundario);
+    margin-bottom: 1.5rem;
+
+}
+.card-info{
+    font-family: var(--font1);
+    font-size: var(--text-xxs);
+    color: var(--terciario);
+}
+.card:hover{
+      border: solid var(--secundario) 0.5rem;
+      opacity: 90%;
+ 
+}
+
+
+.container{
+    padding-bottom: 5rem;
+    .div-sobre-nosotros{
+        h3{
+            font-size: 1em;
+        }
+        span{
+            padding-top: 0.3rem;
+        }
+
+    }
+}
+
+
+
+
+/*media qurry RESPONSIVE*/
+
+@media (max-width: 400px){
+
+  .container{
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+  }
+  .portafolio{
+    flex-direction: column;
+ 
+  }
+   .imagen-donas{
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+   }
+   .footer-logo{
+    align-items: center;
+    display: inline;
+   }
+}
+
+
+@media (max-width: 600px) {
+  nav{
+    text-align: center;
+    padding: 30px 0 0 0;
+    flex-direction: column;
+  }
+  nav a{
+    margin-right: 5px;
+ 
+}
+.nombre-inicial .nombre{  
+    height: 40rem;
+    width: 40rem;
+}
+.div-sobre-nosotros{
+   flex-direction: column;
+}
+.imagen-shop-donut{
+    width: 100%;
+    height: 100%;
+}
+.div-sobre-nosotros .contenedor-donutshop{
+    width: 100%;
+}
+.tarjetas{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.tarjetas .tarjeta{
+    font-size: $text-xxs;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-logo{
+    align-items: center;
+    display: inline;
+   }
+
+
+
+}
+@media (max-width: 800px){
+
+    .container{
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+  
+    }
+    .portafolio{
+      flex-direction: column;
+   
+    }
+     .imagen-donas{
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+     }
+     .footer-logo{
+      align-items: center;
+      display: inline;
+     }
+  }
+@media (max-width: 1568px) {
+    .tarjetas{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        .tarjeta{
+            font-size: $text-xxs;
+            width: 100%;
+            height: 100%;
+            .footer-logo{
+                align-items: center;
+                
+            }
+        }  
+    }
+}
+}
+}
+    

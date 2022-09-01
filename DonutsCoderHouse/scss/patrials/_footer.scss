@@ -1,0 +1,24 @@
+/*footer*/
+.footer{
+    background-color: $secundario;
+    font-size: 1em;
+    padding: 6rem;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    .footer-li{
+        text-align: center;
+        color: bisque;
+}
+.footer-logo{
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    display: block;
+}
+.firma{
+    color: antiquewhite ;
+    font-size: $text-m;
+}
+}

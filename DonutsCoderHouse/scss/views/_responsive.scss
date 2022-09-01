@@ -1,0 +1,10 @@
+@mixin mv ($medida : 480px) {
+      @media screen and (max-width: $medida) {
+        @content;
+    }
+}
+    article{
+        width: 25%;
+        @include mv(768px){width: 50%;}
+        @include mv(){width: 100%;}
+    }

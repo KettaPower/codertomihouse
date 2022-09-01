@@ -1,0 +1,39 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*para controlar los elementos*/
+}
+html{
+    
+    scroll-behavior: smooth;
+    font-size: 62.5%; /*propiedad que se hereda, font size 62.5% equivale a 10px, el tamaño base del sitio es 10px. sirve para las unidades de medida, EM Y REM 1 em y rem AHORA =10px*/
+}
+body{
+    font-family: $font3;
+    background-color: $terciario;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    font-size: 2em;
+}
+a{
+    text-decoration: none;
+    font-size: 2em;
+}
+/*fin de normalizado*/
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+/*Fin HELPER*/
+/*NORMALIZAR ARCHIVO*/

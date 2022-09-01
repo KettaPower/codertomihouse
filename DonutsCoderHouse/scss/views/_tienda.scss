@@ -1,0 +1,53 @@
+.row{
+  padding-left: 15rem ;
+  padding-right: 15rem ;
+  margin-bottom: 5rem;
+  background-color: $secundario;
+
+  .card{
+
+    border-radius: 15px;
+    .card-footer{
+      .btn{
+        color: black;
+        background-color: $primario;
+        font-size: 1.5em;
+      }
+    }
+
+
+
+
+    border: 0.25rem black solid;
+    .card-img-top{
+      border: 2.5px solid $primario;
+      border-radius: 15px;
+    }
+    
+    &:hover{
+      border: 0.25rem lightgreen solid;
+      
+      
+    }
+  }
+}
+
+.col{
+  margin-bottom: 5rem;
+  padding-bottom: 7rem;
+}
+.card-body{
+  .card-text{
+
+    font-size: 1.5em;
+    
+  }
+
+  .text-muted{
+    font-size: 1.5em;
+    }
+  .card-title{
+    font-size: 2em;
+    color: $primario;
+  }
+}

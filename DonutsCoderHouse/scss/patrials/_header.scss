@@ -1,0 +1,39 @@
+.main-header{
+    padding: 2rem;
+    font-family: $font3;
+    background-color: $secundario;
+
+    .main-header-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+        .main-header-logo{
+            display: block;
+            max-width: 150px;
+            min-width: 120px;
+        }
+            .main-menu{
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+            }
+                .header-item{
+                    color: $secundario;
+                    padding: 10px;
+                    font-size: $espacio-sm;
+                    font-weight: bold;
+                    transition: all .3s;
+                    color:$primario;
+                }
+                    .header-item-active{
+                        border: 0px solid $terciario;
+                        border-radius: 15%;
+                    }
+                        .header-item:hover{
+                            background-color: $terciario;
+                            color: antiquewhite;
+                        }
+}
+
